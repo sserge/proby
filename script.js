@@ -23,16 +23,18 @@
   
   
   
-//function loadImage (src) {
-//  return new Promise((resolve, reject) => {
-//    try {
+function loadImage (src) {
+  return new Promise((resolve, reject) => {
+    try {
 //      const image = new Image
 //      image.onLoad = () => resolve(image)
 //      image.src = src
-//    } catch(err) {
+      console.log('asdd')
+    } catch(err) {
 //      return reject(err)
-//    }
-//  })
-//}  
+      console.log('ERROR')
+    }
+  })
+}  
   
 })()
