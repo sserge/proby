@@ -9,8 +9,16 @@
   canvas.height = 750
   
   update()
-  function update() {
+  function update () {
     requestAnimationFrame(update)
+    clearCanvas()
+    context.drawImage(
+      image,
+      0, 0, image.width, image.height,
+      0, 0, canvas.width, canvas.height
+    )
+  }
+  function clearCanvas () {
   }
   
   
