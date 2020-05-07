@@ -2,6 +2,7 @@
 
 try {
 //  const image = await loadImage('image.jpg')
+//  console.log(image)
   
   const canvas = document.getElementById('canvas')
   const context = canvas.getContext('2d')
@@ -27,13 +28,13 @@ try {
 function loadImage (src) {
   return new Promise((resolve, reject) => {
     try {
-//      const image = new Image
-//      image.onLoad = () => resolve(image)
-//      image.src = src
+      const image = new Image
+      image.onLoad = () => resolve(image)
+      image.src = src
       console.log('asdd')
     } catch(err) {
-//      return reject(err)
       console.log('ERROR')
+      return reject(err)
     }
   })
 }
