@@ -1,7 +1,7 @@
 (async function(){
 
 try {
-  const image = await loadImage('./i2.png')
+//  const image = await loadImage('./i2.png')
   console.log('111111')
 //  console.log(image)
   
