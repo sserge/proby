@@ -1,5 +1,6 @@
 (async function(){
 
+try {
 //  const image = await loadImage('image.jpg')
   
   const canvas = document.getElementById('canvas')
@@ -35,6 +36,11 @@ function loadImage (src) {
       console.log('ERROR')
     }
   })
-}  
+}
+  
+} catch(err) {
+  console.log(err)
+}
+  
   
 })()
