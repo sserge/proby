@@ -3,9 +3,9 @@
 //  const image = await loadImage('image.jpg')
   
   const canvas = document.getElementById('canvas')
-//  const context = canvas.getContext('2d')
+  const context = canvas.getContext('2d')
   
-  canvas.width = 750
+  canvas.width = 1000
   canvas.height = 750
   
 //  update()
