@@ -31,7 +31,7 @@ function loadImage (src) {
   return new Promise((resolve, reject) => {
     try {
       const image = new Image
-      image.onLoad = () => resolve(image)
+      image.onLoad = () => return resolve(image)
       image.src = src
       console.log('asdd')
     } catch(err) {
