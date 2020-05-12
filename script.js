@@ -1,15 +1,16 @@
+//(function(){
 (async function(){
 
-try {
-//  const image = await loadImage('./i2.png')
-  console.log('111111')
-//  console.log(image)
-  
   const canvas = document.getElementById('canvas')
   const context = canvas.getContext('2d')
   
   canvas.width = 1000
   canvas.height = 750
+  
+  const image = await loadImage('./i2.png')
+  console.log('111111')
+//  console.log(image)
+  
   
 //  update()
 //  function update () {
@@ -40,9 +41,5 @@ function loadImage (src) {
   })
 }
   
-} catch(err) {
-  console.log(err)
-}
-  
-  
+
 })()
