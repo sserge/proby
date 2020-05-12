@@ -9,7 +9,7 @@
   
   var img = new Image
   img.onload = function() {
-    context.drawImage(img)
+    context.drawImage(img,
       0, 0, img.width, img.height,
       0, 0, canvas.width, canvas.height
     )
