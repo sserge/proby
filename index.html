@@ -6,23 +6,11 @@
   
   
 
-  <script src="./scr.js"></script>
+  <script src="./scr.js"></script> <!-- так подключается файл с сценарием на javascrip -->
 
 
-  <script>			// Сценарий на JavaScript
-
-
-//    // Определение функции для отображения текущего времени 
-//    function displayTime() {
-//    	var element = document.getElementById("clock"); // Найти элемент с id="clock" 
-//    	var now = new Date();	// Получить текущее время
-//    	element.innerHTML = now.toLocaleTimeString(); // Отобразить его
-//    	setTimeout(displayTime, 1000);	// Вызвать снова через 1 сек
-//    }
-
-
+  <script> // Сценарий на JavaScript в html документе
     window.onload = displayTime; // Начать отображение времени после загрузки документа
-
   </script> 
   
   <style>				/* Таблица стилей CSS для часов */
@@ -39,7 +27,6 @@
 
   <hr>
   <span id="clock"></span> <!-- Время выводится здесь -->
-  
   <hr>
   <canvas id='canvas'></canvas>
   
