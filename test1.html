@@ -9,10 +9,21 @@
 
 /* demo page styles */
 body {margin:0; padding:0;}
-.example {margin: 0px; padding: 0px;}
+    
+    
+ /* ================================================================================== */
+ /*                                                                                    */
+ /* ================================================================================== */
+    
+    
+ /*  Определим класс элементов главного меню */
+div.mainMenu {
+  margin: 0px;  /* внешний отступ (пустое пространство, которое отделяет один элемент от другого или от края области просмотра окна браузера). */
+  padding: 0px; /* внутренний отступ (пустое пространство между содержимым элемента и его рамкой) */
+}
 
 /*main menu styles */
-/*#nav { */
+#mainMenu { /* */
 /*    display: inline-block; */
 /*    width: 100%; */
 /*    height: 21px; */
@@ -24,13 +35,15 @@ body {margin:0; padding:0;}
 /*    background-image: -moz-linear-gradient(bottom, #808080, white); */
 /*    background-image: -webkit-linear-gradient(bottom, #808080, white); */
 /*    border-bottom: 1px solid #000000; */
-/*} */
-/*#nav li { */
+}
+
+#mainMenu li {
+    display: inline-block;  /* переопределим пункты списка с блочных на строчные, чтобы пункты списка располагались друг за другом */
 /*    margin: 2px 5px; */
 /*    float:left; */
 /*    position:relative; */
 /*    list-style:none; */
-/*} */
+}
 /*#nav a { */
 /*    display: block; */
 /*    padding-top: 1px; */
@@ -128,8 +141,8 @@ body {margin:0; padding:0;}
   
 <body>
 
- <div class="example">
-    <ul id="nav">  <!--id="mainMenu">-->
+ <div class="mainMenu">
+    <ul id="mainMenu">  <!--id="mainMenu">-->
         <li><a href="#">Home</a></li>
         <li><a href="#">Tutorials</a>  <!--<a class="fly" href="#" tabindex="1">-->
 <!--       <ul>-->  <!--<ul class="dd">-->
