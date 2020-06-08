@@ -27,11 +27,23 @@
 /* .mainMenu {
    
     }*/
+    
+    
 .mainMenu ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
     
+.mainMenu li:hover > .subMenu {
+  visibility: visible;
+}
+
+.mainMenu a {
+  display: block;
+}
+
+
     
 .topMenu > li {
   display: inline-block; /* Горизонтальное меню */
@@ -44,14 +56,11 @@
   position: absolute;
 }
     
-.mainMenu li:hover > .subMenu {
-  visibility: visible;
+.submenu .submenu {
+  position: absolute;
+  top: 0;
+  left: 200px;
 }
-
-.mainMenu a {
-  display: block;
-}
-
     
     
     
@@ -66,8 +75,8 @@ text-decoration: none;
 ---------------------display: block;
 transition: .5s linear;
 }
-.nav ul {
-list-style: none;
+.nav ul {    nav -> mainMenu
+---------------------list-style: none;
 ---------------------margin: 0;
 ---------------------padding: 0;
 }
@@ -109,9 +118,9 @@ letter-spacing: 1px;
 padding: 10px 20px;
 }
 .submenu .submenu {
-position: absolute;
-top: 0;
-left: 200px;
+----------------position: absolute;
+----------------top: 0;
+----------------left: 200px;
 
 }
 .nav li:hover > .submenu {    nav -> mainMenu
