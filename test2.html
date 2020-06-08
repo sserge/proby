@@ -27,6 +27,26 @@
 display: inline-block; /* Горизонтальное меню */
 position: relative;
     }
+
+.submenu {
+/*position: absolute;
+left: 10px;
+z-index: 5;
+width: 240px;*/
+visibility: hidden;
+/*opacity: 0;
+transform: translateY(10px);
+transition: .5s ease-in-out;*/
+}
+    
+.nav li:hover > .submenu {
+  visibility: visible;
+/*  opacity: 1;
+  transform: translateY(0px);*/
+}
+    
+    
+    
     
 .mainMenu ul {
 /*  list-style: none;*/
@@ -47,16 +67,16 @@ position: relative;
     <ul class="topMenu">
       <li><a href="#">Hompe</a></li>
       <li><a href="#">Tuqtorials</a>  <!--<a class="fly" href="#" tabindex="1">-->
-<!--        <ul>-->  <!--<ul class="dd">-->
-<!--          <li><a href="#">HTML / CSS</a></li>-->
-<!--                <li><a href="#">JS / jQuery</a>-->  <!--<a class="fly" href="#" tabindex="1">-->
+        <ul class="subMenu">
+          <li><a href="#">HTML / CSS</a></li>
+          <li><a href="#">JS / jQuery</a>  <!--<a class="fly" href="#" tabindex="1">-->
 <!--                    <ul>-->
 <!--                        <li><a href="#">jQuery</a></li>-->
 <!--                        <li><a href="#">JS</a></li>-->
 <!--                    </ul>-->
-<!--                </li>-->
-<!--          <li><a href="#">PHP</a></li>-->
-<!--        </ul>-->
+          </li>
+          <li><a href="#">PHP</a></li>
+        </ul>
 <!--      </li>-->
 <!--      <li><a href="#">Resources</a>-->  <!--<a class="fly" href="#" tabindex="1">-->
 <!--       <ul>-->  <!--<ul class="dd">-->
