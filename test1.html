@@ -22,7 +22,10 @@ div.mainMenu {
   padding: 0px; /* внутренний отступ (пустое пространство между содержимым элемента и его рамкой) */
 }
 
-/* Панель главного меню */
+ /* ================================================================================== */
+ /*  Горизонтальное меню                                                               */
+ /* ================================================================================== */
+
 #mainMenu { /* */
 /*    display: inline-block; */
 /*    width: 100%; */
@@ -40,9 +43,9 @@ div.mainMenu {
 #mainMenu li {
   display: inline-block;  /* переопределим пункты списка на строчно-блочные, чтобы они располагались друг за другом по горизонтали, но при этом оставив возможность управления размерами и отступами */
     margin: 0px 5px; /* для получения дополнительного промежутка между элементами меню*/
-    float:left; /**/
+/*    float:left; */
 /*    position:relative; */
-    list-style:none; /**/
+/*    list-style:none; */
 }
     
 /* содержимое моожет быть только ссылкой, т.т. только у ссылок бывает псевдокласс hover (при наведении курсора мышки) и сооответственно, мы можем поменять стиль при наведении мышки.    */
@@ -70,6 +73,10 @@ div.mainMenu {
   border-color: #404040
 }
 
+ /* ================================================================================== */
+ /*                                                                                    */
+ /* ================================================================================== */
+    
 /* sublevels*/
 /*#nav ul li:hover a, #nav li:hover li a { */
 /*    background:none; */
@@ -141,11 +148,11 @@ div.mainMenu {
   
 <body>
 
- <div class="mainMenu">
+  <div class="mainMenu">
     <ul id="mainMenu">  <!--id="mainMenu">-->
-        <li><a href="#">Hompe</a></li>
-        <li><a href="#">Tuqtorials</a>  <!--<a class="fly" href="#" tabindex="1">-->
-<!--       <ul>-->  <!--<ul class="dd">-->
+      <li><a href="#">Hompe</a></li>
+      <li><a href="#">Tuqtorials</a>  <!--<a class="fly" href="#" tabindex="1">-->
+        <ul>-->  <!--<ul class="dd">-->
 <!--           <li><a href="#">HTML / CSS</a></li>-->
 <!--                <li><a href="#">JS / jQuery</a>-->  <!--<a class="fly" href="#" tabindex="1">-->
 <!--                    <ul>-->
@@ -154,9 +161,9 @@ div.mainMenu {
 <!--                    </ul>-->
 <!--                </li>-->
 <!--                <li><a href="#">PHP</a></li>-->
-<!--            </ul>-->
-        </li>
-        <li><a href="#">Resources</a>  <!--<a class="fly" href="#" tabindex="1">-->
+        </ul>-->
+      </li>
+      <li><a href="#">Resources</a>  <!--<a class="fly" href="#" tabindex="1">-->
 <!--       <ul>-->  <!--<ul class="dd">-->
 <!--    <li><a href="#">By category</a>-->  <!--<a class="fly" href="#" tabindex="1">-->
 <!--        <ul>-->
@@ -188,10 +195,10 @@ div.mainMenu {
 <!--       </ul>-->
 <!--   </li>-->
 <!--</ul>-->
-        </li>
-        <li><a href="#">About</a></li>
+      </li>
+      <li><a href="#">About</a></li>
     </ul>
-</div>
+  </div>
  
   
 </body>
